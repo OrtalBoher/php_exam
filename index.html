@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact form</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+
+</head>
+
+<body>
+    <div class="col-sm-6 col-sm-offset-3">
+        <h1>Contact form</h1>
+
+        <form role="form" id="contactForm" data-toggle="validator" action="api.php" method="POST">
+            <div id="name-group" class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required
+                    data-error="NEW ERROR MESSAGE" id="validationCustom01" />
+                
+            </div>
+
+            <div id="name-group" class="form-group">
+                <label for="name">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="phone number" required
+                    data-error="NEW ERROR MESSAGE" id="validationCustom02" />
+                
+
+            </div>
+            <div id="email-group" class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com"
+                    required data-error="NEW ERROR MESSAGE" id="vvalidationCustom03" />
+                
+            </div>
+
+
+            <button type="submit" id="form-submit" class="btn btn-success">
+                Submit
+            </button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+
+        </form>
+    </div>
+</body>
+
+</html>
